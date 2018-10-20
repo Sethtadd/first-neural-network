@@ -16,10 +16,28 @@ X = np.array([[0,0],
 X_b = np.insert(X,[2],[[1],[1],[1],[1]],axis=1)
 
 # output dataset
-Y = np.array([[1],
+AND = np.array([[1],
               [1],
               [1],
               [0]])
+
+OR = np.array([[1],
+              [1],
+              [1],
+              [0]])
+
+NAND = np.array([[1],
+              [1],
+              [1],
+              [0]])
+
+NOR = np.array([[1],
+              [1],
+              [1],
+              [0]])
+
+# pick which function to train on
+Y = OR
 
 # seed random numbers... I'm told this is "good practice"
 np.random.seed(1)
