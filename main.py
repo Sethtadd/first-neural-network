@@ -20,7 +20,14 @@ X = np.array([[0,0,1],
 X_b = np.insert(X,[3],[[1],[1],[1],[1],[1],[1],[1],[1]],axis=1)
 
 # output dataset
-Y = np.array([[0,0,1,1,0,1,0,1]]).T
+Y = np.array([[0],
+              [0],
+              [1],
+              [1],
+              [0],
+              [1],
+              [0],
+              [1]])
 
 # seed random numbers... I'm told this is "good practice"
 np.random.seed(1)
